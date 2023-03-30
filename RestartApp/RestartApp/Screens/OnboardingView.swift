@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    //MARK: PROPERTY
     @AppStorage("onboarding") var isOnboardingViewActive: Bool = true
+    @State private var buttonWidth: Double = UIScreen.main.bounds.width - 80
+    @State private var buttonOffset: CGFloat = 0
     var body: some View {
         ZStack {
             Color("ColorBlue").ignoresSafeArea(.all,edges: .all)
@@ -29,14 +32,7 @@ It's  not how much we give but how much love we put into giving.
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 10)
                 ZStack{
-                    ZStack{
-                        Circle()
-                            .stroke(.white.opacity(0.2), lineWidth: 40)
-                            .frame(width: 260, height: 260,alignment: .center)
-                        Circle()
-                            .stroke(.white.opacity(0.2), lineWidth: 80)
-                            .frame(width: 260,height: 260,alignment: .center)
-                    }
+                    CircleGroup(ShapeColor: .white, ShapeOpacity: 0.2)
                     Image("character-1")
                         .resizable()
                         .scaledToFit()
@@ -47,21 +43,23 @@ It's  not how much we give but how much love we put into giving.
                         .fill(Color.white.opacity(0.2))
                     Capsule()
                         .fill(Color.white.opacity(0.2)).padding(8)
-                    HStack{
-                        Capsule()
-                            .fill(Color("ColorRed"))
-                            .frame(width: 80)
-                        Spacer()
-                    }
                     Text("Get Started")
                         .font(.system(.title3,design: .rounded))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .offset(x:20)
+                    HStack{
+                        Capsule()
+                            .fill(Color("ColorRed"))
+                            .frame(width:buttonOffset + 80)
+                        Spacer()
+                    }
+                  
                     HStack {
                         ZStack{
                             Circle()
                                 .fill(Color("ColorRed"))
+                            
                             Circle()
                                 .fill(.black.opacity(0.15))
                                 .padding(8)
@@ -70,14 +68,34 @@ It's  not how much we give but how much love we put into giving.
                         }
                         .foregroundColor(.white)
                     .frame(width: 80,  height: 80, alignment: .center)
-                    .onTapGesture {
-                        isOnboardingViewActive = false
-                    }
+                    .offset(x:buttonOffset)
+                    .gesture(  DragGesture()
+                        .onChanged{
+                            gesture in
+                            if gesture.translation.width > 0 && buttonOffset <= buttonWidth - 80 {
+                                buttonOffset = gesture.translation.width
+                            }
+                        }
+                        .onEnded{
+                            _ in
+                            if buttonOffset > buttonWidth/2{
+                                buttonOffset = buttonWidth - 80
+                                isOnboardingViewActive = false
+                            }else{
+                                buttonOffset = 0
+                            }
+                            
+                        }
+                    )
+//                        {
+//
+//                        isOnboardingViewActive = false
+//                    }
                         Spacer()
                     }
                     
                 }
-                .frame(height: 80, alignment: .center)
+                .frame( width: buttonWidth, height: 80, alignment: .center)
                     .padding()
               
               
