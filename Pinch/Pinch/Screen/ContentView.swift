@@ -21,6 +21,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             ZStack{
+                
+                Color.clear
                 // MARK : - PAGE IMAGE
                 Image("magazine-front-cover")
                     .resizable()
@@ -54,7 +56,27 @@ struct ContentView: View {
                             if imageScale <= 1{
                               resetImageState()
                             }
-                            
+                        }
+                    )
+                    .gesture(
+                    MagnificationGesture()
+                        .onChanged{
+                            value in
+                            withAnimation(.linear(duration: 1)){
+                                if imageScale >= 1 && imageScale <= 5{
+                                    imageScale = value
+                                }else if imageScale > 5{
+                                    imageScale = 5
+                                }
+                            }
+                        }
+                        .onEnded{
+                            _ in
+                            if imageScale > 5{
+                                imageScale = 5
+                            } else if imageScale <= 1{
+                                resetImageState()
+                            }
                         }
                     )
                 
@@ -66,6 +88,57 @@ struct ContentView: View {
                     isAnimating = true
                 }
             })
+            .overlay(InfoPanelView(scale: imageScale, offset: imageOffset)
+                .padding(.horizontal)
+                .padding(.top,30 )
+                     
+                     ,
+                     alignment: .top
+                     )
+            .overlay(Group{
+                HStack{
+                    Button{
+                        withAnimation(.spring()){
+                            if imageScale > 1 {
+                                imageScale -= 1
+                                if imageScale <= 1{
+                                    resetImageState()
+                                }
+                            }
+                        }
+                    } label: {
+                        ControlImageView(icon: "minus.magnifyingglass")
+                      
+                    }
+                    Button{
+                        resetImageState()
+                    } label: {
+                        ControlImageView(icon: "arrow.up.left.and.down.right.magnifyingglass")
+                      
+                    }
+                    Button{
+                        withAnimation(.spring()){
+                            if imageScale < 5 {
+                                imageScale += 1
+                                if imageScale > 5{
+                                   imageScale = 5
+                                }
+                            }
+                        }
+                    } label: {
+                        ControlImageView(icon: "plus.magnifyingglass")
+                    }
+                }
+                .padding(EdgeInsets(top: 12, leading: 20, bottom: 20, trailing: 20))
+                .background(.ultraThinMaterial)
+                .cornerRadius(12)
+                .opacity(isAnimating ? 1 : 0)
+           
+            }
+                .padding(.bottom, 30),
+                     alignment: .bottom
+            )
+                     
         }.navigationViewStyle(.stack)
     }
 }
@@ -73,5 +146,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }
