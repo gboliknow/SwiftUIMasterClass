@@ -88,7 +88,7 @@ struct ContentView: View {
                     )
                 
             }
-            .navigationTitle("Pinch & Zoom")
+            .navigationTitle("Pinch & Zoom++")
             .navigationBarTitleDisplayMode(.inline)
             .onAppear(perform: {
                 withAnimation(.linear(duration: 1)){
