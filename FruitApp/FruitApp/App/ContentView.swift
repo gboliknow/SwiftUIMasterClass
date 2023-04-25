@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isShowingSettings: Bool = false
+
+    var fruits: [Fruit] = fruitsData
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        NavigationView {
+            List{
+                ForEach(fruits.shuffled()) { fruit in
+                  FruitRowView(fruit: fruit)
+                        .padding(.vertical,4)
+                }
+            }
+            .navigationTitle("Fruits")
+        } //: NAVIGATION
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-    }
+        ContentView(fruits: fruitsData)    }
 }
