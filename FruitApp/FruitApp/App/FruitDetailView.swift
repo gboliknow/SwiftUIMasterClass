@@ -21,7 +21,10 @@ struct FruitDetailView: View {
                       .font(.largeTitle)
                       .fontWeight(.heavy)
                       .foregroundColor(fruit.gradientColors[1])
-
+                    ProgressView(value: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
+                    Toggle(isOn: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is On@*/.constant(true)/*@END_MENU_TOKEN@*/) {
+                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label@*/Text("Label")/*@END_MENU_TOKEN@*/
+                    }
                     Text(fruit.headline)
                       .font(.headline)
                       .multilineTextAlignment(.leading)
