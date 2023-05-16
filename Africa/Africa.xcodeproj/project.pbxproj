@@ -37,6 +37,11 @@
 		04CEFA512A0BF2C500C37060 /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA502A0BF2C400C37060 /* AnimalListItemView.swift */; };
 		04CEFA532A0BF38000C37060 /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA522A0BF38000C37060 /* AnimalModel.swift */; };
 		04CEFA552A0BF3BF00C37060 /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 04CEFA542A0BF3BF00C37060 /* animals.json */; };
+		04DE903F2A13C45C0073CDD7 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE903E2A13C45C0073CDD7 /* AnimalGridItemView.swift */; };
+		04DE90452A13C7190073CDD7 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DE90442A13C7190073CDD7 /* Stickers.xcassets */; };
+		04DE90492A13C7190073CDD7 /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 04DE90422A13C7180073CDD7 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04DE904F2A13C9AB0073CDD7 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE904E2A13C9AB0073CDD7 /* CreditsView.swift */; };
+		04DE90542A13CAE50073CDD7 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE90532A13CAE50073CDD7 /* CenterModifier.swift */; };
 		04E174D92A0E3A11006D5BCD /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 04E174D82A0E3A11006D5BCD /* videos.json */; };
 		04E174DB2A0E3A42006D5BCD /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E174DA2A0E3A42006D5BCD /* VideoModel.swift */; };
 		04E174DD2A0E3A77006D5BCD /* VideoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E174DC2A0E3A77006D5BCD /* VideoListItem.swift */; };
@@ -57,7 +62,28 @@
 			remoteGlobalIDString = 04CEFA0C2A0BDFCA00C37060;
 			remoteInfo = Africa;
 		};
+		04DE90472A13C7190073CDD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04CEFA052A0BDFCA00C37060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04DE90412A13C7180073CDD7;
+			remoteInfo = Stickers;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04DE904D2A13C7190073CDD7 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				04DE90492A13C7190073CDD7 /* Stickers.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		040F11782A0D0AEC00D1E21D /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
@@ -94,6 +120,12 @@
 		04CEFA502A0BF2C400C37060 /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
 		04CEFA522A0BF38000C37060 /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 		04CEFA542A0BF3BF00C37060 /* animals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
+		04DE903E2A13C45C0073CDD7 /* AnimalGridItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
+		04DE90422A13C7180073CDD7 /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DE90442A13C7190073CDD7 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		04DE90462A13C7190073CDD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DE904E2A13C9AB0073CDD7 /* CreditsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		04DE90532A13CAE50073CDD7 /* CenterModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 		04E174D82A0E3A11006D5BCD /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
 		04E174DA2A0E3A42006D5BCD /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		04E174DC2A0E3A77006D5BCD /* VideoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItem.swift; sourceTree = "<group>"; };
@@ -138,6 +170,7 @@
 				04CEFA0F2A0BDFCA00C37060 /* Africa */,
 				04CEFA202A0BDFCB00C37060 /* AfricaTests */,
 				04CEFA2A2A0BDFCB00C37060 /* AfricaUITests */,
+				04DE90432A13C7180073CDD7 /* Stickers */,
 				04CEFA0E2A0BDFCA00C37060 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,6 +181,7 @@
 				04CEFA0D2A0BDFCA00C37060 /* Africa.app */,
 				04CEFA1D2A0BDFCB00C37060 /* AfricaTests.xctest */,
 				04CEFA272A0BDFCB00C37060 /* AfricaUITests.xctest */,
+				04DE90422A13C7180073CDD7 /* Stickers.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +189,7 @@
 		04CEFA0F2A0BDFCA00C37060 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				04DE90522A13CAD80073CDD7 /* Modifier */,
 				04CEFA4D2A0BF03000C37060 /* Data */,
 				04CEFA4A2A0BED1600C37060 /* Extension */,
 				04CEFA472A0BEBB800C37060 /* Model */,
@@ -209,6 +244,8 @@
 		04CEFA442A0BE5B700C37060 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04DE904E2A13C9AB0073CDD7 /* CreditsView.swift */,
+				04DE903E2A13C45C0073CDD7 /* AnimalGridItemView.swift */,
 				041BE18F2A12769C00194188 /* MotionAnimationView.swift */,
 				041BE18D2A1271E500194188 /* MapAnnotationView.swift */,
 				04CEFA452A0BE5D100C37060 /* CoverImageView.swift */,
@@ -255,6 +292,23 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
+		04DE90432A13C7180073CDD7 /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				04DE90442A13C7190073CDD7 /* Stickers.xcassets */,
+				04DE90462A13C7190073CDD7 /* Info.plist */,
+			);
+			path = Stickers;
+			sourceTree = "<group>";
+		};
+		04DE90522A13CAD80073CDD7 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				04DE90532A13CAE50073CDD7 /* CenterModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,10 +319,12 @@
 				04CEFA092A0BDFCA00C37060 /* Sources */,
 				04CEFA0A2A0BDFCA00C37060 /* Frameworks */,
 				04CEFA0B2A0BDFCA00C37060 /* Resources */,
+				04DE904D2A13C7190073CDD7 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				04DE90482A13C7190073CDD7 /* PBXTargetDependency */,
 			);
 			name = Africa;
 			productName = Africa;
@@ -311,6 +367,21 @@
 			productReference = 04CEFA272A0BDFCB00C37060 /* AfricaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		04DE90412A13C7180073CDD7 /* Stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DE904A2A13C7190073CDD7 /* Build configuration list for PBXNativeTarget "Stickers" */;
+			buildPhases = (
+				04DE90402A13C7180073CDD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stickers;
+			productName = Stickers;
+			productReference = 04DE90422A13C7180073CDD7 /* Stickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -332,6 +403,9 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 04CEFA0C2A0BDFCA00C37060;
 					};
+					04DE90412A13C7180073CDD7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = 04CEFA082A0BDFCA00C37060 /* Build configuration list for PBXProject "Africa" */;
@@ -350,6 +424,7 @@
 				04CEFA0C2A0BDFCA00C37060 /* Africa */,
 				04CEFA1C2A0BDFCB00C37060 /* AfricaTests */,
 				04CEFA262A0BDFCB00C37060 /* AfricaUITests */,
+				04DE90412A13C7180073CDD7 /* Stickers */,
 			);
 		};
 /* End PBXProject section */
@@ -382,6 +457,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04DE90402A13C7180073CDD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DE90452A13C7190073CDD7 /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -407,10 +490,13 @@
 				04E174DB2A0E3A42006D5BCD /* VideoModel.swift in Sources */,
 				04CEFA412A0BE44200C37060 /* GalleryView.swift in Sources */,
 				041BE18A2A1270C700194188 /* LocationModel.swift in Sources */,
+				04DE903F2A13C45C0073CDD7 /* AnimalGridItemView.swift in Sources */,
 				040F11832A0D0DA100D1E21D /* InsetMapView.swift in Sources */,
 				04E174DD2A0E3A77006D5BCD /* VideoListItem.swift in Sources */,
+				04DE904F2A13C9AB0073CDD7 /* CreditsView.swift in Sources */,
 				04CEFA4C2A0BED4D00C37060 /* CodableBundleExtension.swift in Sources */,
 				041BE1902A12769C00194188 /* MotionAnimationView.swift in Sources */,
+				04DE90542A13CAE50073CDD7 /* CenterModifier.swift in Sources */,
 				040F117B2A0D0B9400D1E21D /* HeadingView.swift in Sources */,
 				041BE1852A126C9100194188 /* VideoPlayerView.swift in Sources */,
 			);
@@ -445,6 +531,11 @@
 			isa = PBXTargetDependency;
 			target = 04CEFA0C2A0BDFCA00C37060 /* Africa */;
 			targetProxy = 04CEFA282A0BDFCB00C37060 /* PBXContainerItemProxy */;
+		};
+		04DE90482A13C7190073CDD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04DE90412A13C7180073CDD7 /* Stickers */;
+			targetProxy = 04DE90472A13C7190073CDD7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -699,6 +790,44 @@
 			};
 			name = Release;
 		};
+		04DE904B2A13C7190073CDD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48982ZPG9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Africa;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.gbolahan.Africa.Stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04DE904C2A13C7190073CDD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48982ZPG9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Africa;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.gbolahan.Africa.Stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -734,6 +863,15 @@
 			buildConfigurations = (
 				04CEFA382A0BDFCB00C37060 /* Debug */,
 				04CEFA392A0BDFCB00C37060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04DE904A2A13C7190073CDD7 /* Build configuration list for PBXNativeTarget "Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DE904B2A13C7190073CDD7 /* Debug */,
+				04DE904C2A13C7190073CDD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
