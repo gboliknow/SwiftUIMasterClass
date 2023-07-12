@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NavigationBarView: View {
     @State private var isAnimated: Bool = false
+
     
     var body: some View {
         HStack{
