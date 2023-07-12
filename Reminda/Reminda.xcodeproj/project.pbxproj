@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04640C0E2A5D75BC0019F785 /* RemindaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04640C0D2A5D75BC0019F785 /* RemindaApp.swift */; };
+		04640C102A5D75BC0019F785 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04640C0F2A5D75BC0019F785 /* ContentView.swift */; };
+		04640C122A5D75BD0019F785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04640C112A5D75BD0019F785 /* Assets.xcassets */; };
+		04640C152A5D75BD0019F785 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04640C142A5D75BD0019F785 /* Preview Assets.xcassets */; };
+		04640C172A5D75BD0019F785 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04640C162A5D75BD0019F785 /* Persistence.swift */; };
+		04640C1A2A5D75BD0019F785 /* Reminda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04640C182A5D75BD0019F785 /* Reminda.xcdatamodeld */; };
+		04640C242A5D75BD0019F785 /* RemindaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04640C232A5D75BD0019F785 /* RemindaTests.swift */; };
+		04640C2E2A5D75BD0019F785 /* RemindaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04640C2D2A5D75BD0019F785 /* RemindaUITests.swift */; };
+		04640C302A5D75BD0019F785 /* RemindaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04640C2F2A5D75BD0019F785 /* RemindaUITestsLaunchTests.swift */; };
+		04640C3F2A5D77BC0019F785 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04640C3C2A5D77BC0019F785 /* sound-tap.mp3 */; };
+		04640C402A5D77BC0019F785 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04640C3D2A5D77BC0019F785 /* sound-rise.mp3 */; };
+		04640C412A5D77BC0019F785 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04640C3E2A5D77BC0019F785 /* sound-ding.mp3 */; };
+		04640C4F2A5D84790019F785 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04640C4E2A5D84790019F785 /* Constant.swift */; };
+		04640C512A5DAF310019F785 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04640C502A5DAF310019F785 /* File.swift */; };
+		049038B12A5EB6A2002686EE /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049038B02A5EB6A2002686EE /* BackgroundImageView.swift */; };
+		049038B32A5EB7CD002686EE /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049038B22A5EB7CD002686EE /* NewTaskItemView.swift */; };
+		049038B52A5EB817002686EE /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049038B42A5EB817002686EE /* SoundPlayer.swift */; };
+		049038B72A5EBBA1002686EE /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049038B62A5EBBA1002686EE /* BlankView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04640C202A5D75BD0019F785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04640C022A5D75BB0019F785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04640C092A5D75BC0019F785;
+			remoteInfo = Reminda;
+		};
+		04640C2A2A5D75BD0019F785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04640C022A5D75BB0019F785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04640C092A5D75BC0019F785;
+			remoteInfo = Reminda;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04640C0A2A5D75BC0019F785 /* Reminda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04640C0D2A5D75BC0019F785 /* RemindaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindaApp.swift; sourceTree = "<group>"; };
+		04640C0F2A5D75BC0019F785 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04640C112A5D75BD0019F785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04640C142A5D75BD0019F785 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04640C162A5D75BD0019F785 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		04640C192A5D75BD0019F785 /* Reminda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reminda.xcdatamodel; sourceTree = "<group>"; };
+		04640C1F2A5D75BD0019F785 /* RemindaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04640C232A5D75BD0019F785 /* RemindaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindaTests.swift; sourceTree = "<group>"; };
+		04640C292A5D75BD0019F785 /* RemindaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04640C2D2A5D75BD0019F785 /* RemindaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindaUITests.swift; sourceTree = "<group>"; };
+		04640C2F2A5D75BD0019F785 /* RemindaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04640C3C2A5D77BC0019F785 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
+		04640C3D2A5D77BC0019F785 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		04640C3E2A5D77BC0019F785 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		04640C492A5D79B90019F785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		04640C4E2A5D84790019F785 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		04640C502A5DAF310019F785 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		049038B02A5EB6A2002686EE /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
+		049038B22A5EB7CD002686EE /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
+		049038B42A5EB817002686EE /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		049038B62A5EBBA1002686EE /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04640C072A5D75BC0019F785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04640C1C2A5D75BD0019F785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04640C262A5D75BD0019F785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04640C012A5D75BB0019F785 = {
+			isa = PBXGroup;
+			children = (
+				04640C0C2A5D75BC0019F785 /* Reminda */,
+				04640C222A5D75BD0019F785 /* RemindaTests */,
+				04640C2C2A5D75BD0019F785 /* RemindaUITests */,
+				04640C0B2A5D75BC0019F785 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04640C0B2A5D75BC0019F785 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04640C0A2A5D75BC0019F785 /* Reminda.app */,
+				04640C1F2A5D75BD0019F785 /* RemindaTests.xctest */,
+				04640C292A5D75BD0019F785 /* RemindaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04640C0C2A5D75BC0019F785 /* Reminda */ = {
+			isa = PBXGroup;
+			children = (
+				04640C492A5D79B90019F785 /* Info.plist */,
+				04640C472A5D78EA0019F785 /* Style */,
+				04640C462A5D78C60019F785 /* Utility */,
+				04640C452A5D78AB0019F785 /* Extension */,
+				04640C0D2A5D75BC0019F785 /* RemindaApp.swift */,
+				04640C422A5D78340019F785 /* Sounds */,
+				04640C432A5D78860019F785 /* View */,
+				04640C112A5D75BD0019F785 /* Assets.xcassets */,
+				04640C482A5D791D0019F785 /* Model */,
+				04640C182A5D75BD0019F785 /* Reminda.xcdatamodeld */,
+				04640C132A5D75BD0019F785 /* Preview Content */,
+			);
+			path = Reminda;
+			sourceTree = "<group>";
+		};
+		04640C132A5D75BD0019F785 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04640C142A5D75BD0019F785 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04640C222A5D75BD0019F785 /* RemindaTests */ = {
+			isa = PBXGroup;
+			children = (
+				04640C232A5D75BD0019F785 /* RemindaTests.swift */,
+			);
+			path = RemindaTests;
+			sourceTree = "<group>";
+		};
+		04640C2C2A5D75BD0019F785 /* RemindaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04640C2D2A5D75BD0019F785 /* RemindaUITests.swift */,
+				04640C2F2A5D75BD0019F785 /* RemindaUITestsLaunchTests.swift */,
+			);
+			path = RemindaUITests;
+			sourceTree = "<group>";
+		};
+		04640C422A5D78340019F785 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				04640C3E2A5D77BC0019F785 /* sound-ding.mp3 */,
+				04640C3D2A5D77BC0019F785 /* sound-rise.mp3 */,
+				04640C3C2A5D77BC0019F785 /* sound-tap.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		04640C432A5D78860019F785 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04640C0F2A5D75BC0019F785 /* ContentView.swift */,
+				049038B02A5EB6A2002686EE /* BackgroundImageView.swift */,
+				049038B22A5EB7CD002686EE /* NewTaskItemView.swift */,
+				049038B62A5EBBA1002686EE /* BlankView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04640C452A5D78AB0019F785 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				04640C502A5DAF310019F785 /* File.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		04640C462A5D78C60019F785 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				04640C4E2A5D84790019F785 /* Constant.swift */,
+				049038B42A5EB817002686EE /* SoundPlayer.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		04640C472A5D78EA0019F785 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		04640C482A5D791D0019F785 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04640C162A5D75BD0019F785 /* Persistence.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04640C092A5D75BC0019F785 /* Reminda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04640C332A5D75BD0019F785 /* Build configuration list for PBXNativeTarget "Reminda" */;
+			buildPhases = (
+				04640C062A5D75BC0019F785 /* Sources */,
+				04640C072A5D75BC0019F785 /* Frameworks */,
+				04640C082A5D75BC0019F785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reminda;
+			productName = Reminda;
+			productReference = 04640C0A2A5D75BC0019F785 /* Reminda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04640C1E2A5D75BD0019F785 /* RemindaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04640C362A5D75BD0019F785 /* Build configuration list for PBXNativeTarget "RemindaTests" */;
+			buildPhases = (
+				04640C1B2A5D75BD0019F785 /* Sources */,
+				04640C1C2A5D75BD0019F785 /* Frameworks */,
+				04640C1D2A5D75BD0019F785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04640C212A5D75BD0019F785 /* PBXTargetDependency */,
+			);
+			name = RemindaTests;
+			productName = RemindaTests;
+			productReference = 04640C1F2A5D75BD0019F785 /* RemindaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04640C282A5D75BD0019F785 /* RemindaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04640C392A5D75BD0019F785 /* Build configuration list for PBXNativeTarget "RemindaUITests" */;
+			buildPhases = (
+				04640C252A5D75BD0019F785 /* Sources */,
+				04640C262A5D75BD0019F785 /* Frameworks */,
+				04640C272A5D75BD0019F785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04640C2B2A5D75BD0019F785 /* PBXTargetDependency */,
+			);
+			name = RemindaUITests;
+			productName = RemindaUITests;
+			productReference = 04640C292A5D75BD0019F785 /* RemindaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04640C022A5D75BB0019F785 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					04640C092A5D75BC0019F785 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					04640C1E2A5D75BD0019F785 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 04640C092A5D75BC0019F785;
+					};
+					04640C282A5D75BD0019F785 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 04640C092A5D75BC0019F785;
+					};
+				};
+			};
+			buildConfigurationList = 04640C052A5D75BB0019F785 /* Build configuration list for PBXProject "Reminda" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04640C012A5D75BB0019F785;
+			productRefGroup = 04640C0B2A5D75BC0019F785 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04640C092A5D75BC0019F785 /* Reminda */,
+				04640C1E2A5D75BD0019F785 /* RemindaTests */,
+				04640C282A5D75BD0019F785 /* RemindaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04640C082A5D75BC0019F785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04640C412A5D77BC0019F785 /* sound-ding.mp3 in Resources */,
+				04640C3F2A5D77BC0019F785 /* sound-tap.mp3 in Resources */,
+				04640C402A5D77BC0019F785 /* sound-rise.mp3 in Resources */,
+				04640C152A5D75BD0019F785 /* Preview Assets.xcassets in Resources */,
+				04640C122A5D75BD0019F785 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04640C1D2A5D75BD0019F785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04640C272A5D75BD0019F785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04640C062A5D75BC0019F785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04640C1A2A5D75BD0019F785 /* Reminda.xcdatamodeld in Sources */,
+				049038B72A5EBBA1002686EE /* BlankView.swift in Sources */,
+				049038B12A5EB6A2002686EE /* BackgroundImageView.swift in Sources */,
+				04640C512A5DAF310019F785 /* File.swift in Sources */,
+				04640C172A5D75BD0019F785 /* Persistence.swift in Sources */,
+				049038B52A5EB817002686EE /* SoundPlayer.swift in Sources */,
+				04640C4F2A5D84790019F785 /* Constant.swift in Sources */,
+				04640C102A5D75BC0019F785 /* ContentView.swift in Sources */,
+				04640C0E2A5D75BC0019F785 /* RemindaApp.swift in Sources */,
+				049038B32A5EB7CD002686EE /* NewTaskItemView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04640C1B2A5D75BD0019F785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04640C242A5D75BD0019F785 /* RemindaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04640C252A5D75BD0019F785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04640C2E2A5D75BD0019F785 /* RemindaUITests.swift in Sources */,
+				04640C302A5D75BD0019F785 /* RemindaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04640C212A5D75BD0019F785 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04640C092A5D75BC0019F785 /* Reminda */;
+			targetProxy = 04640C202A5D75BD0019F785 /* PBXContainerItemProxy */;
+		};
+		04640C2B2A5D75BD0019F785 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04640C092A5D75BC0019F785 /* Reminda */;
+			targetProxy = 04640C2A2A5D75BD0019F785 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04640C312A5D75BD0019F785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04640C322A5D75BD0019F785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04640C342A5D75BD0019F785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Reminda/Preview Content\"";
+				DEVELOPMENT_TEAM = 48982ZPG9T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reminda/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.gbolahan.Reminda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04640C352A5D75BD0019F785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Reminda/Preview Content\"";
+				DEVELOPMENT_TEAM = 48982ZPG9T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reminda/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.gbolahan.Reminda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04640C372A5D75BD0019F785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48982ZPG9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.gbolahan.RemindaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reminda.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reminda";
+			};
+			name = Debug;
+		};
+		04640C382A5D75BD0019F785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48982ZPG9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.gbolahan.RemindaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reminda.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reminda";
+			};
+			name = Release;
+		};
+		04640C3A2A5D75BD0019F785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48982ZPG9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.gbolahan.RemindaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Reminda;
+			};
+			name = Debug;
+		};
+		04640C3B2A5D75BD0019F785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48982ZPG9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.gbolahan.RemindaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Reminda;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04640C052A5D75BB0019F785 /* Build configuration list for PBXProject "Reminda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04640C312A5D75BD0019F785 /* Debug */,
+				04640C322A5D75BD0019F785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04640C332A5D75BD0019F785 /* Build configuration list for PBXNativeTarget "Reminda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04640C342A5D75BD0019F785 /* Debug */,
+				04640C352A5D75BD0019F785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04640C362A5D75BD0019F785 /* Build configuration list for PBXNativeTarget "RemindaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04640C372A5D75BD0019F785 /* Debug */,
+				04640C382A5D75BD0019F785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04640C392A5D75BD0019F785 /* Build configuration list for PBXNativeTarget "RemindaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04640C3A2A5D75BD0019F785 /* Debug */,
+				04640C3B2A5D75BD0019F785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04640C182A5D75BD0019F785 /* Reminda.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04640C192A5D75BD0019F785 /* Reminda.xcdatamodel */,
+			);
+			currentVersion = 04640C192A5D75BD0019F785 /* Reminda.xcdatamodel */;
+			path = Reminda.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04640C022A5D75BB0019F785 /* Project object */;
+}
