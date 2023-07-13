@@ -25,6 +25,8 @@
 		049038B32A5EB7CD002686EE /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049038B22A5EB7CD002686EE /* NewTaskItemView.swift */; };
 		049038B52A5EB817002686EE /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049038B42A5EB817002686EE /* SoundPlayer.swift */; };
 		049038B72A5EBBA1002686EE /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049038B62A5EBBA1002686EE /* BlankView.swift */; };
+		04D317682A601FAF000CF520 /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D317672A601FAF000CF520 /* ListRowItemView.swift */; };
+		04D3176A2A6021C5000CF520 /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D317692A6021C5000CF520 /* CheckboxStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		049038B22A5EB7CD002686EE /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
 		049038B42A5EB817002686EE /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		049038B62A5EBBA1002686EE /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		04D317672A601FAF000CF520 /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
+		04D317692A6021C5000CF520 /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,7 @@
 				049038B02A5EB6A2002686EE /* BackgroundImageView.swift */,
 				049038B22A5EB7CD002686EE /* NewTaskItemView.swift */,
 				049038B62A5EBBA1002686EE /* BlankView.swift */,
+				04D317672A601FAF000CF520 /* ListRowItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 		04640C472A5D78EA0019F785 /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				04D317692A6021C5000CF520 /* CheckboxStyle.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -350,8 +356,10 @@
 				04640C172A5D75BD0019F785 /* Persistence.swift in Sources */,
 				049038B52A5EB817002686EE /* SoundPlayer.swift in Sources */,
 				04640C4F2A5D84790019F785 /* Constant.swift in Sources */,
+				04D317682A601FAF000CF520 /* ListRowItemView.swift in Sources */,
 				04640C102A5D75BC0019F785 /* ContentView.swift in Sources */,
 				04640C0E2A5D75BC0019F785 /* RemindaApp.swift in Sources */,
+				04D3176A2A6021C5000CF520 /* CheckboxStyle.swift in Sources */,
 				049038B32A5EB7CD002686EE /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

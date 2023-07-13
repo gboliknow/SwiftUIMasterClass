@@ -109,40 +109,23 @@ struct ContentView: View {
                     .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 8, x: 0.0, y: 4.0)
                     
                     // MARK: - TASKS
+                    
                     List {
-                        ForEach(items) { item in
-                            NavigationLink {
-                                VStack (alignment: .leading){
-                                    Text(item.task ?? "")
-                                        .font(.headline)
-                                        .fontWeight(.bold)
-                                    
-                                    
-                                    Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                                        .font(.footnote)
-                                        .foregroundColor(.gray)
-                                }
-                            } label: {
-                                VStack (alignment: .leading){
-                                    Text(item.task ?? "")
-                                        .font(.headline)
-                                        .fontWeight(.bold)
-                                    Text(item.timestamp!, formatter: itemFormatter)
-                                        .font(.footnote)
-                                        .foregroundColor(.gray)
-                                }
-                            }
-                        }
-                        .onDelete(perform: deleteItems)
-                    }
+                      ForEach(items) { item in
+                        ListRowItemView(item: item)
+                      }
+                      .onDelete(perform: deleteItems)
+                    } //: LIST//
+                    .cornerRadius(20) // 1.
+                    .listStyle(.inset) // 2.
+                    .padding(20) // 3.
                     .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 12)
                     .padding(.vertical, 0)
                     .frame(maxWidth: 640)
-                    .cornerRadius(20) // 1.
-                    .listStyle(.inset) // 2.
-                    .padding(20) 
-                }
-                
+                  } //: VSTACK
+                  .blur(radius: showNewTaskItem ? 8.0 : 0, opaque: false)
+                  .animation(.easeOut(duration: 0.5))
+                  .transition(.move(edge: .bottom))
                 // MARK: - NEW TASK ITEM
                 
                 if showNewTaskItem {
