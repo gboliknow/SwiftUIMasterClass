@@ -27,6 +27,15 @@
 		049038B72A5EBBA1002686EE /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049038B62A5EBBA1002686EE /* BlankView.swift */; };
 		04D317682A601FAF000CF520 /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D317672A601FAF000CF520 /* ListRowItemView.swift */; };
 		04D3176A2A6021C5000CF520 /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D317692A6021C5000CF520 /* CheckboxStyle.swift */; };
+		04EA9B8C2A62A5FA0072C82C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EA9B8B2A62A5FA0072C82C /* WidgetKit.framework */; };
+		04EA9B8E2A62A5FA0072C82C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EA9B8D2A62A5FA0072C82C /* SwiftUI.framework */; };
+		04EA9B912A62A5FA0072C82C /* RemindaWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA9B902A62A5FA0072C82C /* RemindaWidgetBundle.swift */; };
+		04EA9B932A62A5FA0072C82C /* RemindaWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA9B922A62A5FA0072C82C /* RemindaWidgetLiveActivity.swift */; };
+		04EA9B952A62A5FA0072C82C /* RemindaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA9B942A62A5FA0072C82C /* RemindaWidget.swift */; };
+		04EA9B972A62A5FC0072C82C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EA9B962A62A5FC0072C82C /* Assets.xcassets */; };
+		04EA9B9B2A62A5FC0072C82C /* RemindaWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 04EA9B892A62A5FA0072C82C /* RemindaWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04EA9BA02A62AE5C0072C82C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04640C112A5D75BD0019F785 /* Assets.xcassets */; };
+		04EA9BA12A62AED70072C82C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04640C4E2A5D84790019F785 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +53,28 @@
 			remoteGlobalIDString = 04640C092A5D75BC0019F785;
 			remoteInfo = Reminda;
 		};
+		04EA9B992A62A5FC0072C82C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04640C022A5D75BB0019F785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04EA9B882A62A5FA0072C82C;
+			remoteInfo = RemindaWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04EA9B9C2A62A5FC0072C82C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				04EA9B9B2A62A5FC0072C82C /* RemindaWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		04640C0A2A5D75BC0019F785 /* Reminda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminda.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +101,14 @@
 		049038B62A5EBBA1002686EE /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 		04D317672A601FAF000CF520 /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
 		04D317692A6021C5000CF520 /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
+		04EA9B892A62A5FA0072C82C /* RemindaWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RemindaWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EA9B8B2A62A5FA0072C82C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		04EA9B8D2A62A5FA0072C82C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		04EA9B902A62A5FA0072C82C /* RemindaWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindaWidgetBundle.swift; sourceTree = "<group>"; };
+		04EA9B922A62A5FA0072C82C /* RemindaWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindaWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		04EA9B942A62A5FA0072C82C /* RemindaWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindaWidget.swift; sourceTree = "<group>"; };
+		04EA9B962A62A5FC0072C82C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04EA9B982A62A5FC0072C82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +133,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04EA9B862A62A5FA0072C82C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EA9B8E2A62A5FA0072C82C /* SwiftUI.framework in Frameworks */,
+				04EA9B8C2A62A5FA0072C82C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,6 +151,8 @@
 				04640C0C2A5D75BC0019F785 /* Reminda */,
 				04640C222A5D75BD0019F785 /* RemindaTests */,
 				04640C2C2A5D75BD0019F785 /* RemindaUITests */,
+				04EA9B8F2A62A5FA0072C82C /* RemindaWidget */,
+				04EA9B8A2A62A5FA0072C82C /* Frameworks */,
 				04640C0B2A5D75BC0019F785 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,6 +163,7 @@
 				04640C0A2A5D75BC0019F785 /* Reminda.app */,
 				04640C1F2A5D75BD0019F785 /* RemindaTests.xctest */,
 				04640C292A5D75BD0019F785 /* RemindaUITests.xctest */,
+				04EA9B892A62A5FA0072C82C /* RemindaWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,6 +266,27 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		04EA9B8A2A62A5FA0072C82C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04EA9B8B2A62A5FA0072C82C /* WidgetKit.framework */,
+				04EA9B8D2A62A5FA0072C82C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04EA9B8F2A62A5FA0072C82C /* RemindaWidget */ = {
+			isa = PBXGroup;
+			children = (
+				04EA9B902A62A5FA0072C82C /* RemindaWidgetBundle.swift */,
+				04EA9B922A62A5FA0072C82C /* RemindaWidgetLiveActivity.swift */,
+				04EA9B942A62A5FA0072C82C /* RemindaWidget.swift */,
+				04EA9B962A62A5FC0072C82C /* Assets.xcassets */,
+				04EA9B982A62A5FC0072C82C /* Info.plist */,
+			);
+			path = RemindaWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,10 +297,12 @@
 				04640C062A5D75BC0019F785 /* Sources */,
 				04640C072A5D75BC0019F785 /* Frameworks */,
 				04640C082A5D75BC0019F785 /* Resources */,
+				04EA9B9C2A62A5FC0072C82C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				04EA9B9A2A62A5FC0072C82C /* PBXTargetDependency */,
 			);
 			name = Reminda;
 			productName = Reminda;
@@ -272,6 +345,23 @@
 			productReference = 04640C292A5D75BD0019F785 /* RemindaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		04EA9B882A62A5FA0072C82C /* RemindaWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04EA9B9F2A62A5FC0072C82C /* Build configuration list for PBXNativeTarget "RemindaWidgetExtension" */;
+			buildPhases = (
+				04EA9B852A62A5FA0072C82C /* Sources */,
+				04EA9B862A62A5FA0072C82C /* Frameworks */,
+				04EA9B872A62A5FA0072C82C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemindaWidgetExtension;
+			productName = RemindaWidgetExtension;
+			productReference = 04EA9B892A62A5FA0072C82C /* RemindaWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -293,6 +383,9 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 04640C092A5D75BC0019F785;
 					};
+					04EA9B882A62A5FA0072C82C = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = 04640C052A5D75BB0019F785 /* Build configuration list for PBXProject "Reminda" */;
@@ -311,6 +404,7 @@
 				04640C092A5D75BC0019F785 /* Reminda */,
 				04640C1E2A5D75BD0019F785 /* RemindaTests */,
 				04640C282A5D75BD0019F785 /* RemindaUITests */,
+				04EA9B882A62A5FA0072C82C /* RemindaWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -339,6 +433,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EA9B872A62A5FA0072C82C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EA9BA02A62AE5C0072C82C /* Assets.xcassets in Resources */,
+				04EA9B972A62A5FC0072C82C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +484,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04EA9B852A62A5FA0072C82C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EA9B952A62A5FA0072C82C /* RemindaWidget.swift in Sources */,
+				04EA9B912A62A5FA0072C82C /* RemindaWidgetBundle.swift in Sources */,
+				04EA9B932A62A5FA0072C82C /* RemindaWidgetLiveActivity.swift in Sources */,
+				04EA9BA12A62AED70072C82C /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -393,6 +507,11 @@
 			isa = PBXTargetDependency;
 			target = 04640C092A5D75BC0019F785 /* Reminda */;
 			targetProxy = 04640C2A2A5D75BD0019F785 /* PBXContainerItemProxy */;
+		};
+		04EA9B9A2A62A5FC0072C82C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04EA9B882A62A5FA0072C82C /* RemindaWidgetExtension */;
+			targetProxy = 04EA9B992A62A5FC0072C82C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -514,6 +633,7 @@
 		04640C342A5D75BD0019F785 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +663,7 @@
 		04640C352A5D75BD0019F785 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -645,6 +766,60 @@
 			};
 			name = Release;
 		};
+		04EA9B9D2A62A5FC0072C82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48982ZPG9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemindaWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RemindaWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.gbolahan.Reminda.RemindaWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04EA9B9E2A62A5FC0072C82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48982ZPG9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemindaWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RemindaWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.gbolahan.Reminda.RemindaWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -680,6 +855,15 @@
 			buildConfigurations = (
 				04640C3A2A5D75BD0019F785 /* Debug */,
 				04640C3B2A5D75BD0019F785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04EA9B9F2A62A5FC0072C82C /* Build configuration list for PBXNativeTarget "RemindaWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EA9B9D2A62A5FC0072C82C /* Debug */,
+				04EA9B9E2A62A5FC0072C82C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
