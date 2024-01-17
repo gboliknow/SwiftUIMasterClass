@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042FAC6C2B5826080020906A /* DestinationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FAC6B2B5826080020906A /* DestinationSearchView.swift */; };
 		04F255522B50257F00B4C618 /* AirbnbCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F255512B50257F00B4C618 /* AirbnbCloneApp.swift */; };
 		04F255542B50257F00B4C618 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F255532B50257F00B4C618 /* ContentView.swift */; };
 		04F255562B50258000B4C618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F255552B50258000B4C618 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042FAC6B2B5826080020906A /* DestinationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchView.swift; sourceTree = "<group>"; };
 		04F2554E2B50257F00B4C618 /* AirbnbClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirbnbClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F255512B50257F00B4C618 /* AirbnbCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbCloneApp.swift; sourceTree = "<group>"; };
 		04F255532B50257F00B4C618 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				04F2556A2B50270600B4C618 /* ExploreView.swift */,
 				04F2556E2B5167D600B4C618 /* SearchAndFilterBarView.swift */,
+				042FAC6B2B5826080020906A /* DestinationSearchView.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F255742B5552FE00B4C618 /* ListingImageCarouselView.swift in Sources */,
+				042FAC6C2B5826080020906A /* DestinationSearchView.swift in Sources */,
 				04F2556F2B5167D600B4C618 /* SearchAndFilterBarView.swift in Sources */,
 				04F255542B50257F00B4C618 /* ContentView.swift in Sources */,
 				04F2556D2B5034E000B4C618 /* ListingView.swift in Sources */,
