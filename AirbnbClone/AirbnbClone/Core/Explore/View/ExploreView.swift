@@ -9,26 +9,25 @@ import SwiftUI
 
 struct ExploreView: View {
     @State private var showDestinationSearchView = false
+    @StateObject var viewModel = ExploreViewModel(service: ExploreService())
     var body: some View {
         NavigationStack{
             if showDestinationSearchView{
                DestinationSearchView(show: $showDestinationSearchView)
             }else{
                 VStack {
-                    SearchAndFilterBarView()
-                        .onTapGesture {
-                            withAnimation(.easeInOut){
-                                showDestinationSearchView.toggle()
-                            }
-                        }
+                    
                     ScrollView{
-                        
+                        SearchAndFilterBarView()
+                            .onTapGesture {
+                                withAnimation(.easeInOut){
+                                    showDestinationSearchView.toggle()
+                                }
+                            }
                         LazyVStack(spacing: 32){
-                            ForEach(0...10, id: \.self){ listing in
-                                
-                                
+                            ForEach(viewModel.listings){ listing in
                                 NavigationLink(value: listing) {
-                                    ListingItemView().frame(height: 400)
+                                    ListingItemView(listing: listing).frame(height: 400)
                                         .clipShape(RoundedRectangle(cornerRadius: 10))
                                 }
                                 
@@ -36,8 +35,8 @@ struct ExploreView: View {
                         }
                         
                     }
-                    .navigationDestination(for: Int.self){ listing in
-                        ListingDetailView()
+                    .navigationDestination(for: Listing.self){ listing in
+                        ListingDetailView(listing: listing)
                             .navigationBarBackButtonHidden()
                         
                     }
