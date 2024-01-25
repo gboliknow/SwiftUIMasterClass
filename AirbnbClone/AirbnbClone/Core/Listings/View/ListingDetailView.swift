@@ -10,11 +10,15 @@ import MapKit
 
 struct ListingDetailView: View {
     let listing : Listing
-    @State private var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194), // Default location (San Francisco)
-        span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-    )
-    
+    @State private var region: MKCoordinateRegion
+    init(listing: Listing) {
+           self.listing = listing
+           // Set initial region based on the listing's latitude and longitude
+           _region = State(initialValue: MKCoordinateRegion(
+               center: CLLocationCoordinate2D(latitude: listing.latitude, longitude: listing.longitude),
+               span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.05)
+           ))
+       }
     @Environment(\.dismiss) private var dismiss
     var body: some View {
         
@@ -175,7 +179,7 @@ struct ListingDetailView: View {
                         .padding()
                     
                     
-                    Map(coordinateRegion: $region)
+                    Map(coordinateRegion: $region )
                         .onAppear {
                             // Additional setup or data loading when the view appears
                         }
